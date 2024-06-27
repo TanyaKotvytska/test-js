@@ -183,3 +183,73 @@
 // }
 
 // console.log(add(5, 10, 15));
+
+// function makeMessage(name, price) {
+//     const message = `You picked ${name}, price per item is ${price} credits.`;
+//     return message;
+// }
+
+// console.log(makeMessage('Radar', 6150));
+
+// function calculateTotalPrice(orderedQuantity, pricePerItem) {
+//     const totalPrice = orderedQuantity * pricePerItem;
+//     return totalPrice;
+// }
+
+// console.log(calculateTotalPrice(5, 100));
+
+//ДЗ1
+
+// function makeTransaction(quantity, pricePerDroid) {
+//     let totalPrice = quantity * pricePerDroid;
+//     return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+// }
+
+// console.log(makeTransaction(5, 3000));
+// console.log(makeTransaction(3, 1000));
+// console.log(makeTransaction(10, 500));
+
+// function getShippingMessage(country, price, deliveryFee) {
+//     let totalPrice = price + deliveryFee;
+//     return `Shipping to ${country} will cost ${totalPrice} credits`;
+// }
+
+// console.log(getShippingMessage("Australia", 120, 50));
+// console.log(getShippingMessage("Germany", 80, 20));
+// console.log(getShippingMessage("Sweden", 100, 20));
+
+// function getElementWidth(content, padding, border) {
+//     const contentWidth = parseFloat(content);
+//     const paddingWidth = parseFloat(padding);
+//     const borderWidth = parseFloat(border);
+//     const totalWidth = contentWidth + 2 * paddingWidth + 2 * borderWidth;
+//     return totalWidth;
+// }
+
+// console.log(getElementWidth("50px", "8px", "4px"));
+// console.log(getElementWidth("60px", "12px", "8.5px"));
+// console.log(getElementWidth("200px", "0px", "0px"));
+
+//Інструкція if
+
+// function checkAge(age) {
+//     let isAdult = 18;
+//     if (age >= isAdult) {
+//         return "You are an adult";
+//     }
+// }
+
+// console.log(checkAge(20));
+// console.log(checkAge(17));
+
+//Інструкція if...else
+
+// function checkStorage(available, ordered) {
+//     if (available >= ordered) {
+//         return "Order is processed, our manager will contact you";
+//     } else {
+//         return "Not enough goods in stock!";
+//     }
+// }
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
