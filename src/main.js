@@ -406,7 +406,7 @@
 //Методи startsWith() і endsWith()
 
 // function checkFileExtension(fileName, ext) {
-//     if (fileName.includes(ext)) {
+//     if (fileName.endsWith(ext)) {
 //         return "File extension matches";
 //     } else {
 //         return "File extension does not match";
@@ -415,3 +415,65 @@
 
 // console.log(checkFileExtension("styles.css", ".css"));
 // console.log(checkFileExtension("styles.css", ".js"));
+
+//Метод indexOf()
+
+// function getFileName(file) {
+//     const fileIndex = file.indexOf(".");
+//     if (fileIndex === -1) {
+//         return file;
+//     } else {
+//         return file.slice(0, fileIndex);
+// }
+// }
+
+// console.log(getFileName("styles.css"));
+// console.log(getFileName("app"));
+// console.log(getFileName("index.js"));
+
+//Метод trim()
+
+// function createFileName(name, ext) {
+//     const nameUser = name.trim();
+//     const fileUser = `${nameUser}.${ext}`;
+//     return fileUser;
+// }
+
+// console.log(createFileName(" order ", "txt"));
+// console.log(createFileName("report ", "csv"));
+
+//Цикл while
+
+// function calculateTotal(number) {
+//   let total = 0; // Ініціалізуємо змінну 'total' для зберігання суми
+//     let i = 1; // Ініціалізуємо змінну 'i' на 1, починаємо з числа 1
+
+//     // Використовуємо цикл 'while', щоб ітерувати від 1 до 'number'
+//     while (i <= number) {
+//         total += i; // Додаємо поточне значення 'i' до 'total'
+//         i++; // Інкрементуємо 'i' на 1 для наступної ітерації
+//     }
+//     return total; // Повертаємо накопичену суму, збережену в 'total'
+// }
+
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(18));
+
+
+//Цикл for
+
+// function calculateTotal(number) {
+//     let total = 0;
+//     for (let i = 1; i <= number; i++) {
+//         total += i;
+//     }
+//     return total;
+// }
+
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(18));
+
+//Інкремент і декремент
+
