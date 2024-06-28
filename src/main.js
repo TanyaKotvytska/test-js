@@ -477,3 +477,34 @@
 
 //Інкремент і декремент
 
+// let x = 5;
+// const y = ++x;
+// console.log(x); // 6
+// console.log(y); // 6
+
+// let x = 5;
+// const y = x++;
+// console.log(x); // 6
+// console.log(y); // 5
+
+// //let x = 5;
+// const y = --x;
+// console.log(x); // 4
+// console.log(y); // 4
+
+// let x = 5;
+// const y = x--;
+// console.log(x); // 4
+// console.log(y); // 5
+
+// function calculateEvenTotal(number) {
+//     let total = 0;
+//     for (let i = 2; i <= number; i += 2) {
+//         total += i;
+//     }
+//     return total;
+// }
+
+// console.log(calculateEvenTotal(1));
+// console.log(calculateEvenTotal(3));
+// console.log(calculateEvenTotal(18));
