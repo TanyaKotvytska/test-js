@@ -253,3 +253,165 @@
 // }
 // console.log(checkStorage(100, 50));
 // console.log(checkStorage(100, 130));
+
+//else...if
+
+// function checkStorage(available, ordered) {
+//     if (ordered === 0) {
+//         return "There are no products in the order!";
+//     } else if (available >= ordered) {
+//         return "The order is accepted, our manager will contact you";;
+//     } else {
+//        return "Your order is too large, there are not enough items in stock!";
+// }
+// }
+
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
+// console.log(checkStorage(70, 0));
+
+//Тернарний оператор
+
+// function checkPassword(password) {
+//     const correctPassword = "jqueryismyjam";
+//     const userPassword = password === correctPassword ? "Access granted" : "Access denied, wrong password!";
+//     return userPassword;
+// }
+
+// console.log(checkPassword("jqueryismyjam"));
+// console.log(checkPassword("angul4r1sl1f3"));
+
+//Оператор switch, Оператор break
+
+// function getSubscriptionPrice(type) {
+//     switch (type) {
+//         case "starter":
+//             return 0;
+//             break;
+//         case "professional":
+//             return 20;
+//             break;
+//         case "organization":
+//             return 50;
+//             break;
+//         default:
+//             return "Invalid subscription type!";
+//     }
+// }
+// console.log(getSubscriptionPrice("professional"));
+// console.log(getSubscriptionPrice("organization"));
+// console.log(getSubscriptionPrice("starter"));
+// console.log(getSubscriptionPrice("random"));
+
+//Логічне «І» Оператор "І" (&&)
+//Оператор “І” зліва направо перевіряє почергово обидва операнди на істинність та повертає або значення останнього істинного (тільки правого) операнда, або першого хибного (лівого чи правого), на якому він запнувся.
+
+// console.log("hello" && 5); // 5
+// console.log(5 && "hello"); // "hello"
+// console.log("hello" && 0); // 0
+// console.log(0 && "hello"); // 0
+
+// function isNumberInRange(start, end, number) {
+//     const result = number >= start && number <= end;
+//     return result;
+// }
+
+// console.log(isNumberInRange(10, 30, 17));
+// console.log(isNumberInRange(10, 30, 5));
+
+//Логічне «АБО» Оператор "АБО" (||)
+//Якщо хоча б один із операндів можна перетворити на true, результатом логічного «АБО» буде цей операнд.
+
+//console.log(true || false); // true
+//console.log(false || 5); // 5
+//console.log("hello" || 0); // "hello"
+
+//Як тільки логічний оператор “АБО” знайшов операнд, який перетворюється на true, він зупиняється та повертає його значення. Якщо до істини було перетворено перший операнд, то другий навіть не буде оцінюватися.
+
+// console.log(5 || 3); // 5
+// console.log(3 || 5); // 3
+// console.log("mango" || "poly"); // "mango"
+// console.log("poly" || "mango"); // "poly"
+
+//Якщо всі операнди перетворюються на false, результатом буде значення крайнього правого операнда.
+
+// console.log(0 || false); // false
+// console.log(false || 0); // 0
+
+// console.log(null || ""); // ""
+// console.log("" || null); // null
+
+// function checkAccess(subType) {
+//     const result = subType === "pro" || subType === "vip";
+//     return result;
+// }
+
+// console.log(checkAccess("pro"));
+// console.log(checkAccess("starter"));
+
+//Логічне «НІ» (!)  унарний оператор — він виконує операцію над одним операндом праворуч.
+//Логічне «НІ» приводить операнд до логічного значення (true або false) і потім заперечує (інвертує) його, тобто заміняє на протилежне: true —> false, а false —> true.
+
+// console.log(!true); // false
+// console.log(!false); // true
+// console.log(!3); // !3 -> !true -> false
+// console.log(!"Mango"); // !"Mango" -> !true -> false
+// console.log(!0); // !0 -> !false -> true
+// console.log(!""); // !"" -> !false -> true
+// console.log(!null); // !null -> !false -> true
+
+// function toggleModalVisibility(isVisible) {
+//     const result = !isVisible;
+//     return result;
+// }
+
+// console.log(toggleModalVisibility(true));
+// console.log(toggleModalVisibility(false));
+
+//Метод slice()
+
+// function getSubstring(string, length) {
+//     const result = string.slice(0, length);
+//     return result;
+// }
+
+// console.log(getSubstring("Hello world", 3));
+// console.log(getSubstring("Hello world", 8));
+// console.log(getSubstring("Hello world", 0));
+
+//Методи toLowerCase() і toUpperCase()
+
+// function normalizeInput(input, to) {
+//     if (to === "upper") {
+//         return input.toUpperCase();
+//     } else {
+//         return input.toLowerCase();
+//     }
+// }
+
+// console.log(normalizeInput("This ISN'T SpaM", "lower"));
+// console.log(normalizeInput("This ISN'T SpaM", "upper"));
+
+//Метод includes()
+
+// function checkForName(fullname, firstName) {
+//     const result = fullname.toLowerCase().includes(firstName.toLowerCase());
+//     return result;
+// }
+
+// console.log(checkForName("Jason Neis", "Jason"));
+// console.log(checkForName("Jason Neis", "jAsOn"));
+// console.log(checkForName("Jason Neis", "Jacob"));
+
+//Методи startsWith() і endsWith()
+
+// function checkFileExtension(fileName, ext) {
+//     if (fileName.includes(ext)) {
+//         return "File extension matches";
+//     } else {
+//         return "File extension does not match";
+// }
+// }
+
+// console.log(checkFileExtension("styles.css", ".css"));
+// console.log(checkFileExtension("styles.css", ".js"));
