@@ -508,3 +508,69 @@
 // console.log(calculateEvenTotal(1));
 // console.log(calculateEvenTotal(3));
 // console.log(calculateEvenTotal(18));
+
+// function calculateEvenTotal(start, end) {
+//     let number;
+//     for (let i = start; i <= end; i++) {
+//         if (i % 5 === 0) {
+//         number = i;
+//         break;
+//         }
+//     }
+//     return number;
+// }
+
+// console.log(calculateEvenTotal(6, 17));
+
+// function findNumber(start, end, divisor) {
+//     let number;
+//     for (let i = start; i <= end; i++) {
+//         if (i % divisor === 0) {
+//         number = i;
+//         break;
+//         }
+//     }
+//     return number;
+// }
+
+// console.log(findNumber(2, 6, 5));
+
+
+//ДЗ2
+
+// function makeTransaction(quantity, pricePerDroid, customerCredits) {
+//     const totalPrice = quantity * pricePerDroid;
+//     if (customerCredits >= totalPrice) {
+//         return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+//     } else {
+//         return `Insufficient funds`;
+//     }
+// }
+
+// console.log(makeTransaction(5, 3000, 23000));
+// console.log(makeTransaction(10, 5000, 8000));
+
+// function formatMessage(message, maxLength) {
+//     if (message.length <= maxLength) {
+//         return message;
+//     } else {
+//         return message.slice(0, maxLength)+"...";
+// }
+// }
+
+// console.log(formatMessage("Curabitur ligula sapien", 16));
+// console.log(formatMessage("Curabitur ligula sapien", 23));
+
+// function checkForSpam(message) {
+//     const word = message.toLowerCase();
+//     const spamWord = word.includes("spam");
+//     const saleWord = word.includes("sale");
+//     if (spamWord || saleWord) {
+//         return true;
+//     } else {
+//         return false;
+// }
+// }
+
+// console.log(checkForSpam("Latest technology news"));
+// console.log(checkForSpam("Get best sale offers now!"));
