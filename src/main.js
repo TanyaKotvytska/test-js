@@ -574,3 +574,66 @@
 
 // console.log(checkForSpam("Latest technology news"));
 // console.log(checkForSpam("Get best sale offers now!"));
+
+//Масиви
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+//Доступ до елементів
+
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[3];
+
+// console.log(lastElement);
+
+//Перевизначення значення елемента
+
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+
+// console.log(fruits);
+
+//Довжина масиву
+
+// function getOrderQuantity(order) {
+//     return order.length;
+// }
+
+// console.log(getOrderQuantity(["apple", "peach", "pear", "banana"]));
+// console.log(getOrderQuantity(["apple", "banana"]));
+
+//Індекс останнього елемента
+
+// function getLastElementMeta(array) {
+//     // Перевіряємо, чи масив не є порожнім
+//     if (array.length === 0) {
+//         // Якщо масив порожній, повертаємо спеціальне значення для індексу та значення
+//         return [-1, undefined]; // Повертаємо -1 як індекс для порожнього масиву
+//     } else {
+//         // Знаходимо індекс останнього елемента
+//         const lastIndex = array.length - 1;
+//         // Повертаємо масив з індексом останнього елемента та самим останнім елементом масиву
+//         return [lastIndex, array[lastIndex]];
+//     }
+// }
+
+// console.log(getLastElementMeta(["apple", "peach", "pear"]));
+// console.log(getLastElementMeta(["apple", "peach"]));
+
+// function getExtremeElements(array) {
+//     if (array.length === 0) {
+//         return [-1, undefined];
+//     } else {
+//         const lastIndex = array.length - 1;
+//         return [array[0], array[lastIndex]];
+//     }
+// }
+
+// console.log(getExtremeElements([1, 2, 3, 4, 5]));
+// console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+
+//Метод join()
+
+
+
