@@ -635,5 +635,68 @@
 
 //Метод join()
 
+// function getLength(array) {
+//     const words = array.join("");
+//     return words.length;
+// }
 
+// console.log(getLength(["Mango", "hurries", "to", "the", "train"]));
 
+//Метод split()
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//     const words = message.split(" ");
+//     const totalPrice = words.length * pricePerWord;
+//     return totalPrice;
+// }
+
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+// console.log(calculateEngravingPrice("Web-development is creative work", 40));
+
+//Метод slice()
+
+// const fruits = ["apple", "plum", "pear", "orange", "banana"];
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice(2);
+
+// console.log(firstTwoEls);
+// console.log(nonExtremeEls);
+// console.log(lastThreeEls);
+
+//Метод concat()
+
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Peach", "Houston"];
+// const allClients = oldClients.concat(newClients);
+
+// console.log(allClients);
+
+//Метод indexOf()
+
+// function getSlice(array, value) {
+//     const index = array.indexOf(value); // Знаходимо індекс першого входження значення в масив
+//   if (index === -1) { // Якщо значення не знайдено, повертаємо порожній масив
+//     return [];
+//   } else { // Якщо значення знайдено, повертаємо підмасив від початку масиву до елемента зі значенням value включно
+//     return array.slice(0, index + 1);
+//   }
+// }
+
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Poly"));
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Jacob"));
+
+//Метод push()
+
+// function createArrayOfNumbers(min, max) {
+//     const numbers = [];
+//     for (let i = min; i <= max; i += 1) {
+//         numbers.push(i);
+//     }
+//     return numbers;
+// }
+
+// console.log(createArrayOfNumbers(1, 3));
+// console.log(createArrayOfNumbers(14, 17));
+
+//Ітерація по масиву
