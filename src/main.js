@@ -700,3 +700,127 @@
 // console.log(createArrayOfNumbers(14, 17));
 
 //Ітерація по масиву
+
+// function calculateTotalPrice(order) {
+//   let total = 0; // починаємо з нуля
+
+//   // перебираємо кожен елемент масиву
+//   for (let i = 0; i < order.length; i++) {
+//     // додаємо кожний елемент до загальної суми
+//     total += order[i];
+//   }
+
+//   return total; // повертаємо загальну суму
+// }
+
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+
+// function getEvenNumbers(start, end) {
+//   const evenNumbers = []; // Створюємо порожній масив для парних чисел
+  
+//   // Перевіряємо, чи є start парним числом. Якщо ні, збільшуємо його на 1, щоб почати з парного числа.
+//   if (start % 2 !== 0) {
+//     start++;
+//   }
+  
+//   // Проходимо по всіх числах від start до end з кроком 2, щоб отримати лише парні числа.
+//   for (let i = start; i <= end; i += 2) {
+//     evenNumbers.push(i); // Додаємо поточне парне число до масиву
+//   }
+
+//   return evenNumbers; // Повертаємо масив парних чисел
+// }
+
+// console.log(getEvenNumbers(6, 12));
+// console.log(getEvenNumbers(8, 8));
+// console.log(getEvenNumbers(7, 7));
+
+//Метод includes()
+
+// function checkStorage(storage, item) {
+//     if (storage.includes(item)) {
+//         return `${item} is available to order!`;
+//     } else {
+//         return `Sorry! We are out of stock!`;
+// }
+// }
+
+// console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+// console.log(checkStorage(["apple", "plum", "pear"], "orange"));
+
+//
+
+//Цикл for...of
+
+// function calculateTotalPrice(order) {
+//     let total = 0;
+//     for (const orders of order) {
+//         total += orders;
+//     }
+//     return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([]));
+
+//Псевдомасив arguments
+
+// function createReversedArray() {
+//     const args = Array.from(arguments);
+//     const result = args.toReversed();
+//     return result;
+// }
+
+// console.log(createReversedArray(164, 48, 291));
+// console.log(createReversedArray(412, 371, 94, 63, 176));
+
+//Параметри за замовчуванням
+
+// function calculateTax(amount, taxRate = 0.2) {
+//     const totalAmount = amount *= taxRate;
+//     return totalAmount;
+// }
+
+// console.log(calculateTax(100, 0.1));
+// console.log(calculateTax(100, 0.2));
+// console.log(calculateTax(100, 0.3));
+
+//ДЗ3
+
+// function slugify(title) {
+//     let words = title.toLowerCase().split(' ').join("-");
+//     return words;
+// }
+
+// console.log(slugify("Arrays for begginers"));
+// console.log(slugify("English for developer"));
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//     let thirdArray = firstArray.concat(secondArray);
+//     if (thirdArray.length > maxLength) {
+//         return thirdArray.slice(0, maxLength);
+//     } else {
+//         thirdArray;
+//     }
+
+// }
+
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));
+
+// function filterArray(numbers, value) {
+//     let arrayNumbers = [];
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] > value) {
+//             arrayNumbers.push(numbers[i]);
+//         }
+//     }
+//     return arrayNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
