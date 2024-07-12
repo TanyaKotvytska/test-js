@@ -867,3 +867,111 @@
 
 //Доступ до вкладених властивостей
 
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+//     owner: {
+//         name: "Henry",
+//         phone: "982-126-1588",
+//         email: "henry.carter@aptmail.com",
+//     },
+// };
+
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// const lastTag = apartment.tags[2];
+
+//Доступ до властивостей через квадратні дужки
+
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+//     owner: {
+//         name: "Henry",
+//         phone: "982-126-1588",
+//         email: "henry.carter@aptmail.com",
+//     },
+// };
+
+// const aptRating = apartment["rating"];
+// const aptDesc = apartment["descr"];
+// const aptPrice = apartment["price"];
+// const aptTags = apartment["tags"];
+
+//Зміна значення властивостей
+
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+//     owner: {
+//         name: "Henry",
+//         phone: "982-126-1588",
+//         email: "henry.carter@aptmail.com",
+//     },
+// };
+
+// apartment.price = 5000;
+// apartment.rating = 4.7;
+// apartment.owner.name = "Henry Sibola";
+// apartment.tags.push("trusted");
+
+//Додавання властивостей
+
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+//     owner: {
+//         name: "Henry",
+//         phone: "982-126-1588",
+//         email: "henry.carter@aptmail.com",
+//     },
+//     location = {},
+// };
+
+// apartment.area = 60;
+// apartment.rooms = 3;
+// apartment.location = {
+//     country: "Jamaica",
+//     city: "Kingston",
+// }
+
+//Короткі властивості
+
+// const name = "Repair Droid";
+// const price = 2500;
+// const image = "https://via.placeholder.com/640x480";
+// const tags = ["on sale", "trending", "best buy"];
+
+// const product = {
+//     name,
+//     price,
+//     image,
+//     tags,
+// };
+
+//Обчислювальні властивості
+
+// const emailInputName = "email";
+// const passwordInputName = "password";
+
+// const credentials = {
+//     [emailInputName]: "henry.carter@aptmail.com",
+//     [passwordInputName]: "jqueryismyjam",
+// };
+
+//Цикл for...in
