@@ -824,3 +824,46 @@
 // console.log(filterArray([1, 2, 3, 4, 5], 3));
 // console.log(filterArray([12, 24, 8, 41, 76], 20));
 // console.log(filterArray([1, 2, 3, 4, 5], 5));
+
+//Створення об'єкта
+
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+// };
+
+//Вкладені властивості
+
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+//     owner: {
+//         name: "Henry",
+//         phone: "982-126-1588",
+//         email: "henry.carter@aptmail.com",
+//     },
+// };
+
+//Доступ до властивостей через крапку
+
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+// };
+
+// const aptRating = apartment.rating;
+// const aptDesc = apartment.descr;
+// const aptPrice = apartment.price;
+// const aptTags = apartment.tags;
+
+//Доступ до вкладених властивостей
+
